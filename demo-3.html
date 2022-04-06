@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/nomui/nomui.css">
+</head>
+<style>
+    body {
+        background: #F0F2F5;
+    }
+</style>
+
+<body>
+    <!-- 内容部分-s -->
+    <div id="app"></div>
+    <!-- 内容部分-e -->
+    <!-- nomui js -->
+    <script src="/nomui/nomui.js"></script>
+
+    <!-- use nomui -->
+    <script>
+        new nomui.Component({
+            reference: document.getElementById('app'),
+            children: [{
+                    attrs: {
+                        style: {
+                            'padding': '12px 16px',
+                            'border': '1px solid #D2D2D2',
+                            'max-width': '430px',
+                            'margin-bottom': '16px',
+                            'background': '#fff',
+                            'border-radius': '4px',
+                        },
+                    },
+                    children: [{
+                            attrs: {
+                                style: {
+                                    'margin-bottom': '12px',
+                                },
+                            },
+                            children: [{
+                                    tag: 'span',
+                                    children: '匹配条件：'
+                                },
+                                {
+                                    attrs: {
+                                        style: {
+                                            'color': 'rgba(0, 0, 0, 0.65)',
+                                        },
+                                    },
+                                    tag: 'span',
+                                    children: '{诊断名称 包含 糖尿病] AND {年龄 > 40岁} ADN {性别 等于 男性}'
+                                }
+                            ],
+                        }, {
+                            attrs: {
+                                style: {
+                                    'margin-bottom': '12px',
+                                },
+                            },
+                            children: [{
+                                    tag: 'span',
+                                    children: '最近一次匹配统计：'
+                                },
+                                {
+                                    attrs: {
+                                        style: {
+                                            'color': 'rgba(0, 0, 0, 0.65)',
+                                        },
+                                    },
+                                    tag: 'span',
+                                    children: '34个患者'
+                                }
+                            ],
+                        },
+                        {
+                            attrs: {
+                                style: {
+                                    'display': 'flex',
+                                    'align-items': 'center',
+                                },
+                            },
+                            children: [{
+                                    styles: {
+                                        border: 'right',
+                                    },
+                                    attrs: {
+                                        style: {
+                                            'padding': '0 10px 0 0',
+                                            'font-size': '12px',
+                                            'color': 'var(--nom-color-primary)',
+                                            'cursor': 'pointer',
+                                            'height': '16px',
+                                        },
+                                    },
+                                    tag: 'span',
+                                    children: '复用',
+                                },
+                                {
+                                    styles: {
+                                        border: 'right',
+                                    },
+                                    attrs: {
+                                        style: {
+                                            'padding': '0 10px 0 10px',
+                                            'cursor': 'pointer',
+                                            'height': '16px',
+                                        },
+                                    },
+                                    component: 'Icon',
+                                    type: 'star',
+                                },
+                                {
+                                    attrs: {
+                                        style: {
+                                            'padding': '0 10px 0 10px',
+                                            'cursor': 'pointer',
+                                            'height': '16px',
+                                        },
+                                    },
+                                    component: 'Icon',
+                                    type: 'delete',
+                                },
+                            ],
+                        }
+                    ],
+                },
+                {
+                    attrs: {
+                        style: {
+                            'padding': '12px 16px',
+                            'border': '1px solid #D2D2D2',
+                            'max-width': '430px',
+                            'margin-bottom': '16px',
+                            'background': '#fff',
+                            'border-radius': '4px',
+                        },
+                    },
+                    children: [{
+                            attrs: {
+                                style: {
+                                    'margin-bottom': '12px',
+                                },
+                            },
+                            children: [{
+                                    tag: 'span',
+                                    children: '匹配条件：'
+                                },
+                                {
+                                    attrs: {
+                                        style: {
+                                            'color': 'rgba(0, 0, 0, 0.65)',
+                                        },
+                                    },
+                                    tag: 'span',
+                                    children: '{诊断名称 包含 糖尿病] AND {年龄 > 40岁} ADN {性别 等于 男性}'
+                                }
+                            ],
+                        }, {
+                            attrs: {
+                                style: {
+                                    'margin-bottom': '12px',
+                                },
+                            },
+                            children: [{
+                                    tag: 'span',
+                                    children: '最近一次匹配统计：'
+                                },
+                                {
+                                    attrs: {
+                                        style: {
+                                            'color': 'rgba(0, 0, 0, 0.65)',
+                                        },
+                                    },
+                                    tag: 'span',
+                                    children: '34个患者'
+                                }
+                            ],
+                        },
+                        {
+                            attrs: {
+                                style: {
+                                    'display': 'flex',
+                                    'align-items': 'center',
+                                },
+                            },
+                            children: [{
+                                    styles: {
+                                        border: 'right',
+                                    },
+                                    attrs: {
+                                        style: {
+                                            'padding': '0 10px 0 0',
+                                            'font-size': '12px',
+                                            'color': 'var(--nom-color-primary)',
+                                            'cursor': 'pointer',
+                                            'height': '16px',
+                                        },
+                                    },
+                                    tag: 'span',
+                                    children: '复用',
+                                },
+                                {
+                                    styles: {
+                                        border: 'right',
+                                    },
+                                    attrs: {
+                                        style: {
+                                            'padding': '0 10px 0 10px',
+                                            'cursor': 'pointer',
+                                            'height': '16px',
+                                        },
+                                    },
+                                    component: 'Icon',
+                                    type: 'star',
+                                },
+                                {
+                                    attrs: {
+                                        style: {
+                                            'padding': '0 10px 0 10px',
+                                            'cursor': 'pointer',
+                                            'height': '16px',
+                                        },
+                                    },
+                                    component: 'Icon',
+                                    type: 'delete',
+                                },
+                            ],
+                        }
+                    ],
+                },
+            ],
+        })
+    </script>
+</body>
+
+</html>

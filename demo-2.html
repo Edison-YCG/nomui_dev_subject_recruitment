@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/nomui/nomui.css">
+</head>
+<style>
+    body {
+        background: #F0F2F5;
+    }
+</style>
+
+<body>
+    <!-- 内容部分-s -->
+    <div id="app"></div>
+    <!-- 内容部分-e -->
+    <!-- nomui js -->
+    <script src="/nomui/nomui.js"></script>
+
+    <!-- use nomui -->
+    <script>
+        new nomui.Component({
+            reference: document.getElementById('app'),
+            children: [{
+                component: 'CheckboxList',
+                label: '纳入条件',
+                labelAlign: 'top',
+                attrs: {
+                    style: {
+                        'color': 'var(--nom-color-primary)',
+                    },
+                },
+                options: [{
+                        attrs: {
+                            style: {
+                                'color': '#999',
+                            },
+                        },
+                        text: `#“疾病” 等于 “<a href="javascript:void(0)">肺癌</a>”，且 `,
+                        value: 0,
+                    },
+                    {
+                        attrs: {
+                            style: {
+                                'color': '#999',
+                            },
+                        },
+                        text: `#“症状” 等于 “<a href="javascript:void(0)">咳血，痰中带血</a>”，*且 `,
+                        value: 1,
+                    },
+                    {
+                        attrs: {
+                            style: {
+                                'color': '#999',
+                            },
+                        },
+                        text: `#“咳嗽-诱因” 等于 “<a href="javascript:void(0)">受凉后</a>”，*且`,
+                        value: 3,
+                    },
+                    {
+                        attrs: {
+                            style: {
+                                'color': '#999',
+                            },
+                        },
+                        text: `#“用药” 等于 “<a href="javascript:void(0)">卡铂</a>”`,
+                        value: 4,
+                    },
+                ],
+            }, ],
+        })
+    </script>
+</body>
+
+</html>
