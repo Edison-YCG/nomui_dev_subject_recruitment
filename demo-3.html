@@ -25,6 +25,11 @@
     <script>
         new nomui.Component({
             reference: document.getElementById('app'),
+            attrs: {
+                style: {
+                    'padding': '200px 0 0 500px',
+                },
+            },
             children: [{
                     attrs: {
                         style: {
@@ -42,9 +47,10 @@
                                     'margin-bottom': '12px',
                                 },
                             },
-                            children: [{
-                                    tag: 'span',
-                                    children: '匹配条件：'
+                            component: 'Flex',
+                            gap: 'small',
+                            cols: [{
+                                    children: '匹配条件：',
                                 },
                                 {
                                     attrs: {
@@ -52,8 +58,8 @@
                                             'color': 'rgba(0, 0, 0, 0.65)',
                                         },
                                     },
-                                    tag: 'span',
-                                    children: '{诊断名称 包含 糖尿病] AND {年龄 > 40岁} ADN {性别 等于 男性}'
+                                    span: 9,
+                                    children: '{诊断名称 包含 糖尿病] AND {年龄 > 40岁} ADN {性别 等于 男性}',
                                 }
                             ],
                         }, {
@@ -62,9 +68,10 @@
                                     'margin-bottom': '12px',
                                 },
                             },
-                            children: [{
-                                    tag: 'span',
-                                    children: '最近一次匹配统计：'
+                            component: 'Flex',
+                            gap: 'small',
+                            cols: [{
+                                    children: '最近一次匹配统计：',
                                 },
                                 {
                                     attrs: {
@@ -72,8 +79,8 @@
                                             'color': 'rgba(0, 0, 0, 0.65)',
                                         },
                                     },
-                                    tag: 'span',
-                                    children: '34个患者'
+                                    span: 7,
+                                    children: '34个患者',
                                 }
                             ],
                         },
@@ -82,11 +89,15 @@
                                 style: {
                                     'display': 'flex',
                                     'align-items': 'center',
+                                    'user-select': 'none',
                                 },
                             },
                             children: [{
                                     styles: {
                                         border: 'right',
+                                        hover: {
+                                            'color': 'lgray',
+                                        },
                                     },
                                     attrs: {
                                         style: {
@@ -103,6 +114,9 @@
                                 {
                                     styles: {
                                         border: 'right',
+                                        hover: {
+                                            'color': 'lgray',
+                                        },
                                     },
                                     attrs: {
                                         style: {
@@ -115,6 +129,11 @@
                                     type: 'star',
                                 },
                                 {
+                                    styles: {
+                                        hover: {
+                                            'color': 'lgray',
+                                        },
+                                    },
                                     attrs: {
                                         style: {
                                             'padding': '0 10px 0 10px',
@@ -146,9 +165,10 @@
                                     'margin-bottom': '12px',
                                 },
                             },
-                            children: [{
-                                    tag: 'span',
-                                    children: '匹配条件：'
+                            component: 'Flex',
+                            gap: 'small',
+                            cols: [{
+                                    children: '匹配条件：',
                                 },
                                 {
                                     attrs: {
@@ -156,8 +176,8 @@
                                             'color': 'rgba(0, 0, 0, 0.65)',
                                         },
                                     },
-                                    tag: 'span',
-                                    children: '{诊断名称 包含 糖尿病] AND {年龄 > 40岁} ADN {性别 等于 男性}'
+                                    span: 9,
+                                    children: '{诊断名称 包含 糖尿病] AND {年龄 > 40岁} ADN {性别 等于 男性}',
                                 }
                             ],
                         }, {
@@ -166,9 +186,10 @@
                                     'margin-bottom': '12px',
                                 },
                             },
-                            children: [{
-                                    tag: 'span',
-                                    children: '最近一次匹配统计：'
+                            component: 'Flex',
+                            gap: 'small',
+                            cols: [{
+                                    children: '最近一次匹配统计：',
                                 },
                                 {
                                     attrs: {
@@ -176,8 +197,8 @@
                                             'color': 'rgba(0, 0, 0, 0.65)',
                                         },
                                     },
-                                    tag: 'span',
-                                    children: '34个患者'
+                                    span: 7,
+                                    children: '34个患者',
                                 }
                             ],
                         },
@@ -186,11 +207,15 @@
                                 style: {
                                     'display': 'flex',
                                     'align-items': 'center',
+                                    'user-select': 'none',
                                 },
                             },
                             children: [{
                                     styles: {
                                         border: 'right',
+                                        hover: {
+                                            'color': 'lgray',
+                                        },
                                     },
                                     attrs: {
                                         style: {
@@ -207,6 +232,9 @@
                                 {
                                     styles: {
                                         border: 'right',
+                                        hover: {
+                                            'color': 'lgray',
+                                        },
                                     },
                                     attrs: {
                                         style: {
@@ -219,6 +247,11 @@
                                     type: 'star',
                                 },
                                 {
+                                    styles: {
+                                        hover: {
+                                            'color': 'lgray',
+                                        },
+                                    },
                                     attrs: {
                                         style: {
                                             'padding': '0 10px 0 10px',
