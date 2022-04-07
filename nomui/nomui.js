@@ -49,8 +49,6 @@
     return browserInfo
   }
 
-  console.log(getBrowser());
-
   // 支持 position: sticky 属性的最小版本
   // 参考 https://caniuse.com/?search=sticky
   const SUPPORT_STICKY_MIN_BROWSER_VERSION_MAP = {
@@ -2758,6 +2756,26 @@
     `<svg viewBox="64 64 896 896" focusable="false" data-icon="file" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M854.6 288.6L639.4 73.4c-6-6-14.1-9.4-22.6-9.4H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V311.3c0-8.5-3.4-16.7-9.4-22.7zM790.2 326H602V137.8L790.2 326zm1.8 562H232V136h302v216a42 42 0 0042 42h216v494z"></path></svg>`,
     cat,
   );
+  Icon.add(
+    'star-empty',
+    `<svg t="1649316361180" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="28064" width="1em" height="1em"><path d="M335.008 916.63c-35.915 22.314-82.88 10.773-104.693-25.558a77.333 77.333 0 0 1-8.96-57.43l46.485-198.24a13.141 13.141 0 0 0-4.021-12.863l-152.16-132.587c-31.606-27.52-35.254-75.648-8.235-107.733a75.68 75.68 0 0 1 51.733-26.752L354.848 339.2c4.352-0.363 8.245-3.232 10.027-7.595l76.938-188.17c16.032-39.2 60.619-57.92 99.52-41.462a76.31 76.31 0 0 1 40.832 41.462l76.939 188.16c1.781 4.373 5.675 7.253 10.027 7.605l199.712 16.277c41.877 3.414 72.885 40.459 69.568 82.518a76.939 76.939 0 0 1-26.08 51.978L760.17 622.56c-3.542 3.083-5.142 8.075-4.022 12.853l46.486 198.24c9.621 41.014-15.36 82.336-56.139 92.224a75.285 75.285 0 0 1-57.525-9.237L517.995 810.4a11.296 11.296 0 0 0-12.011 0L334.997 916.64z m216.779-160.598l170.976 106.24c2.624 1.621 5.717 2.123 8.65 1.408 6.411-1.557 10.56-8.427 8.928-15.424l-46.485-198.24a77.141 77.141 0 0 1 24.277-75.733l152.16-132.576c2.486-2.166 4.054-5.312 4.331-8.747 0.565-7.136-4.49-13.173-10.976-13.696l-199.712-16.288a75.99 75.99 0 0 1-64.064-47.168l-76.939-188.16a12.31 12.31 0 0 0-6.538-6.741c-5.899-2.496-12.726 0.373-15.328 6.741l-76.95 188.16a75.99 75.99 0 0 1-64.064 47.168l-199.701 16.288a11.68 11.68 0 0 0-7.979 4.181 13.227 13.227 0 0 0 1.334 18.262l152.16 132.586a77.141 77.141 0 0 1 24.277 75.734l-46.485 198.229a13.333 13.333 0 0 0 1.514 9.877c3.488 5.792 10.582 7.531 16.064 4.128l170.987-106.229a75.296 75.296 0 0 1 79.563 0z" fill="currentColor" p-id="28065"></path></svg>`,
+    cat,
+  );
+  Icon.add(
+    'fold-left',
+    `<svg t="1649315432519" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2228" width="1em" height="1em"><path d="M576.51 118.64L183.16 512l393.35 393.36a32 32 0 0 1-45.29 45.28l-416-416a32 32 0 0 1 0-45.28l416-416a32 32 0 1 1 45.29 45.28zM828 61.85A34.15 34.15 0 0 0 793.81 96v832a34.15 34.15 0 1 0 68.3 0V96A34.15 34.15 0 0 0 828 61.85z" fill="currentColor" p-id="2229"></path></svg>`,
+    cat,
+  );
+  Icon.add(
+    'check-ok',
+    `<svg t="1649315616560" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2995" width="1em" height="1em"><path d="M76.8 128a51.2 51.2 0 0 1 51.2-51.2h768a51.2 51.2 0 0 1 51.2 51.2v768a51.2 51.2 0 0 1-51.2 51.2h-768a51.2 51.2 0 0 1-51.2-51.2v-768z m615.68 237.8752l-235.3664 235.3664-126.6688-126.72a25.6 25.6 0 0 0-36.2496 36.1984l141.2096 141.2096a30.72 30.72 0 0 0 43.4688 0l249.8048-249.856a25.6 25.6 0 0 0-36.1984-36.1984z" fill="currentColor" p-id="2996"></path></svg>`,
+    cat,
+  );
+  Icon.add(
+    'check-no',
+    `<svg t="1649316123217" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23250" width="1em" height="1em"><path d="M113.4 111.7h800v800h-800z" fill="currentColor" p-id="23251"></path><path d="M553.9 511.7L759 267.3c3.4-4.1 0.5-10.2-4.8-10.2h-62.3c-3.7 0-7.2 1.6-9.6 4.5L513.1 463.1 344 261.5c-2.3-2.8-5.9-4.5-9.6-4.5H272c-5.3 0-8.2 6.2-4.8 10.2l205.1 244.5-205 244.5c-3.4 4.1-0.5 10.2 4.8 10.2h62.3c3.7 0 7.2-1.6 9.6-4.5l169.1-201.6L682.3 762c2.3 2.8 5.9 4.5 9.6 4.5h62.3c5.3 0 8.2-6.2 4.8-10.2L553.9 511.7z" fill="#fff" p-id="23252"></path></svg>`,
+    cat,
+  );
 
   class Caption extends Component {
     constructor(props, ...mixins) {
@@ -2999,12 +3017,14 @@
     _created: function () {
       this.modal = this.parent.modal;
       this.__isModalContent = true;
+      this.parent.parent.modalContent = this;
     },
 
     _config: function () {
       this.setProps({
         classes: {
           'nom-modal-content': true,
+          'nom-modal-content-animate-show': true,
         },
       });
     },
@@ -3177,6 +3197,9 @@
       }
 
       this.setProps({
+        classes: {
+          'nom-modal-mask-animate-show': true,
+        },
         children: {
           component: ModalDialog,
           attrs: {
@@ -3219,7 +3242,15 @@
       }
 
       this._callHandler(this.props.onClose, { result: result });
-      this.remove();
+      this.modalContent.removeClass('nom-modal-content-animate-show');
+      this.modalContent.addClass('nom-modal-content-animate-hide');
+      setTimeout(() => {
+        this.removeClass('nom-modal-mask-animate-show');
+        this.addClass('nom-modal-mask-animate-hide');
+        setTimeout(() => {
+          this.remove();
+        }, 90);
+      }, 90);
     }
 
     setzIndex() {
@@ -17558,7 +17589,7 @@
         children.push({
           component: ColGroupCol,
           column: {
-            width: 17,
+            width: this.table.grid.props.scrollbarWidth,
           },
         });
       }
@@ -18205,7 +18236,7 @@
       } else if (fixed === 'right') {
         this._stickyPos = parentEl.offsetWidth - el.offsetLeft - el.offsetWidth;
         if (this.table.hasGrid && this.table.grid.props.frozenHeader) {
-          this._stickyPos -= 17;
+          this._stickyPos -= this.table.grid.props.scrollbarWidth;
         }
       }
       this._setStyle({ [fixed]: `${this._stickyPos}px` });
@@ -18884,8 +18915,8 @@
     }
 
     _config() {
-      const { frozenHeader, summary } = this.grid.props;
-      const minWidth = frozenHeader ? this.grid.minWidth + 17 : this.grid.minWidth;
+      const { frozenHeader, summary, scrollbarWidth } = this.grid.props;
+      const minWidth = frozenHeader ? this.grid.minWidth + scrollbarWidth : this.grid.minWidth;
 
       this._summaryHeight = summary ? 36 : 0;
 
@@ -19008,15 +19039,20 @@
 
     _setScrollerVisible(data) {
       const { pRect, gRect } = data;
+      const { scrollbarWidth } = this.grid.props;
 
       if (gRect.top < pRect.top && gRect.top + gRect.height > pRect.top) {
         this.element.style.transform = `translateY(${pRect.top - gRect.top - 2}px)`;
-        this.grid.settingBtn.element.style.transform = `translateY(${pRect.top - gRect.top - 2}px)`;
+        if (this.grid.settingBtn) {
+          this.grid.settingBtn.element.style.transform = `translateY(${pRect.top - gRect.top - 2}px)`;
+        }
+      } else if (this.grid.settingBtn) {
+        this.grid.settingBtn.element.style.transform = `translateY(0px)`;
       }
 
       if (
         gRect.top < pRect.height + pRect.top &&
-        gRect.top + gRect.height - 17 - this._summaryHeight > pRect.top + pRect.height
+        gRect.top + gRect.height - scrollbarWidth - this._summaryHeight > pRect.top + pRect.height
       ) {
         this.scrollbar.show();
       } else {
@@ -20434,6 +20470,7 @@
     sticky: false,
     line: 'row',
     bordered: false,
+    scrollbarWidth: 8
   };
   Grid._loopSetValue = function (key, arry) {
     if (key === undefined || key.cascade === undefined) return false
