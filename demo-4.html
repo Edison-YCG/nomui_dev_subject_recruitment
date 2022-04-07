@@ -43,90 +43,207 @@
                     },
                 },
                 children: [{
-                    attrs: {
-                        style: {
-                            'margin-bottom': '16px',
-                        },
-                    },
-                    component: 'Flex',
-                    gap: 'medium',
-                    cols: [{
-                            children: '项目编号',
-                        },
-                        {
-                            attrs: {
-                                style: {
-                                    'color': 'rgba(0, 0, 0, 0.45)',
-                                },
+                        component: 'Flex',
+                        attrs: {
+                            style: {
+                                'padding-bottom': '12px',
+                                'margin-bottom': '18px',
+                                'border-bottom': '1px dashed #E8E8E8',
                             },
-                            span: 10,
-                            children: '109988',
-                        }
-                    ],
-                }, {
-                    attrs: {
-                        style: {
-                            'margin-bottom': '16px',
                         },
-                    },
-                    component: 'Flex',
-                    gap: 'medium',
-                    cols: [{
-                            children: '项目名称',
-                        },
-                        {
-                            attrs: {
-                                style: {
-                                    'color': 'rgba(0, 0, 0, 0.45)',
-                                },
-                            },
-                            span: 10,
-                            children: '【肺癌】XZP-3621 治疗中国 ALK 重排或 ROS1 重排的晚期非小细胞肺癌受试者 ',
-                        }
-                    ],
-                }, {
-                    component: 'Flex',
-                    gap: 'medium',
-                    cols: [{
-                            children: '纳入条件',
-                        },
-                        {
-                            attrs: {
-                                style: {
-                                    'margin-top': '-13px',
-                                    'margin-bottom': '-13px',
-                                },
-                            },
-                            span: 10,
-                            children: {
-                                component: 'CheckboxList',
+                        gap: 'large',
+                        align: 'center',
+                        cols: [{
                                 attrs: {
                                     style: {
-                                        'color': '#999',
+                                        'font-size': '16px',
+                                        'color': 'var(--nom-color-primary)',
+                                        'font-weight': 'bold',
                                     },
                                 },
-                                value: [0, 1, 2, 3, 4],
-                                options: [{
-                                        text: `#“疾病” 等于 “<a href="javascript:void(0)">肺癌</a>”，且 `,
-                                        value: 0,
+
+                                children: '推荐项目一',
+                            },
+                            {
+                                attrs: {
+                                    style: {
+                                        'display': 'flex',
+                                        'align-items': 'center',
+                                    },
+                                },
+                                children: [{
+                                        attrs: {
+                                            style: {
+                                                'margin-right': '10px',
+                                            },
+                                        },
+                                        children: '符合率',
                                     },
                                     {
-                                        text: `#“症状” 等于 “<a href="javascript:void(0)">咳血，痰中带血</a>”，*且 `,
-                                        value: 1,
-                                    },
-                                    {
-                                        text: `#“咳嗽-诱因” 等于 “<a href="javascript:void(0)">受凉后</a>”，*且`,
-                                        value: 3,
-                                    },
-                                    {
-                                        text: `#“用药” 等于 “<a href="javascript:void(0)">卡铂</a>”`,
-                                        value: 4,
+                                        component: 'Avatar',
+                                        styles: {
+                                            shape: 'round',
+                                        },
+                                        attrs: {
+                                            style: {
+                                                color: '#fff',
+                                                backgroundColor: 'var(--nom-color-primary)',
+                                            },
+                                        },
+                                        text: '100',
                                     },
                                 ],
                             },
-                        }
-                    ],
-                }, ],
+                            {
+                                component: 'Tag',
+                                attrs: {
+                                    style: {
+                                        'background': 'var(--nom-color-primary)',
+                                        'color': '#fff',
+                                    },
+                                },
+                                text: '同步初筛',
+                            },
+                        ],
+                    },
+                    {
+                        attrs: {
+                            style: {
+                                'margin-bottom': '16px',
+                            },
+                        },
+                        component: 'Flex',
+                        gap: 'medium',
+                        cols: [{
+                                children: '项目编号',
+                            },
+                            {
+                                attrs: {
+                                    style: {
+                                        'color': 'rgba(0, 0, 0, 0.45)',
+                                    },
+                                },
+                                span: 10,
+                                children: '109988',
+                            }
+                        ],
+                    }, {
+                        attrs: {
+                            style: {
+                                'margin-bottom': '16px',
+                            },
+                        },
+                        component: 'Flex',
+                        gap: 'medium',
+                        cols: [{
+                                children: '项目名称',
+                            },
+                            {
+                                attrs: {
+                                    style: {
+                                        'color': 'rgba(0, 0, 0, 0.45)',
+                                    },
+                                },
+                                span: 10,
+                                children: '【肺癌】XZP-3621 治疗中国 ALK 重排或 ROS1 重排的晚期非小细胞肺癌受试者 ',
+                            }
+                        ],
+                    }, {
+                        component: 'Flex',
+                        gap: 'medium',
+                        cols: [{
+                                children: '纳入条件',
+                            },
+                            {
+                                span: 10,
+                                children: {
+                                    component: 'Flex',
+                                    attrs: {
+                                        style: {
+                                            'font-size': '14px',
+                                            'color': '#999',
+                                        },
+                                    },
+                                    wrap: true,
+                                    gap: 'medium',
+                                    cols: [{
+                                            component: 'Flex',
+                                            cols: [{
+                                                    component: 'Icon',
+                                                    type: 'checked-square',
+                                                    attrs: {
+                                                        style: {
+                                                            'font-size': '20px',
+                                                            'color': 'var(--nom-color-primary)',
+                                                        },
+                                                    },
+                                                },
+                                                {
+                                                    children: `#“疾病” 等于 “<a href="javascript:void(0)">肺癌</a>”，且 `,
+                                                },
+                                            ],
+
+                                        },
+                                        {
+                                            component: 'Flex',
+                                            cols: [{
+                                                    component: 'Icon',
+                                                    type: 'checked-square',
+                                                    attrs: {
+                                                        style: {
+                                                            'font-size': '20px',
+                                                            'color': 'var(--nom-color-primary)',
+                                                        },
+                                                    },
+                                                },
+                                                {
+                                                    children: `#“症状” 等于 “<a href="javascript:void(0)">咳血，痰中带血</a>”，*且 `,
+                                                },
+                                            ],
+
+                                        },
+                                        {
+                                            component: 'Flex',
+                                            cols: [{
+                                                    component: 'Icon',
+                                                    type: 'checked-square',
+                                                    attrs: {
+                                                        style: {
+                                                            'font-size': '20px',
+                                                            'color': 'var(--nom-color-primary)',
+                                                        },
+                                                    },
+                                                },
+                                                {
+                                                    children: `#“咳嗽-诱因” 等于 “<a href="javascript:void(0)">受凉后</a>”，*且`,
+                                                },
+                                            ],
+
+                                        },
+                                        {
+                                            component: 'Flex',
+                                            cols: [{
+                                                    component: 'Icon',
+                                                    type: 'half-square',
+                                                    attrs: {
+                                                        style: {
+                                                            'font-size': '20px',
+                                                            'color': 'var(--nom-color-primary)',
+                                                        },
+                                                    },
+                                                },
+                                                {
+                                                    children: `#“用药” 等于 “<a href="javascript:void(0)">卡铂</a>”`,
+                                                },
+                                            ],
+
+                                        },
+                                    ],
+                                },
+                            }
+                        ],
+                    },
+                ],
             }, ],
         })
     </script>
