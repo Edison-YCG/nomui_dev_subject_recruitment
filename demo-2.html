@@ -12,6 +12,34 @@
     body {
         background: #F0F2F5;
     }
+
+    .checkbox-list-other .nom-checkbox-list>.nom-field-content>.nom-list>.nom-list-content>.nom-list-item-wrapper>label:not(.s-selected)>span.checkbox {
+        background-color: #D40000;
+        border-color: #D40000;
+    }
+
+    .checkbox-list-other .nom-checkbox-list>.nom-field-content>.nom-list>.nom-list-content>.nom-list-item-wrapper>label:not(.s-selected)>span.checkbox::before,
+    .checkbox-list-other .nom-checkbox-list>.nom-field-content>.nom-list>.nom-list-content>.nom-list-item-wrapper>label:not(.s-selected)>span.checkbox::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 2px;
+        height: 11px;
+        margin-top: -5px;
+        margin-left: -1px;
+        line-height: 1.42857143;
+        content: '';
+        background: #fff;
+    }
+
+    .checkbox-list-other .nom-checkbox-list>.nom-field-content>.nom-list>.nom-list-content>.nom-list-item-wrapper>label:not(.s-selected)>span.checkbox::before {
+        transform: rotate(45deg);
+    }
+
+    .checkbox-list-other .nom-checkbox-list>.nom-field-content>.nom-list>.nom-list-content>.nom-list-item-wrapper>label:not(.s-selected)>span.checkbox::after {
+        transform: rotate(-45deg);
+    }
 </style>
 
 <body>
@@ -30,6 +58,9 @@
                     'padding': '200px 0 0 200px',
                 },
             },
+            classes: {
+                'checkbox-list-other': true,
+            },
             children: [{
                 attrs: {
                     style: {
@@ -46,7 +77,8 @@
                         'color': '#999',
                     },
                 },
-                value: [0, 1, 2, 3, 4],
+                disabled: true,
+                value: [0, 1, 2, 3],
                 options: [{
                         text: `#“疾病” 等于 “<a href="javascript:void(0)">肺癌</a>”，且 `,
                         value: 0,
