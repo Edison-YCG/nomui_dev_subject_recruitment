@@ -1,0 +1,65 @@
+body {
+    --nom-color-primary: #3B51BB;
+    --nom-color-primary-hover: rgb(18, 46, 186);
+}
+
+.main-nav-menu .s-selected {
+    color: inherit !important;
+    background: #161D67 !important;
+}
+
+/*.recruitment-task-gird-td-th td {
+    padding: 2px 12px
+}*/
+
+/*.recruitment-task-gird-td-th th {
+    padding: 2px 12px
+}*/
+
+.recruitment-task-gird-th-td table.nom-table td {
+    padding: 0px 8px;
+}
+
+
+.checkbox-list-other .nom-checkbox-list>.nom-field-content>.nom-list>.nom-list-content>.nom-list-item-wrapper>label:not(.s-selected)>span.checkbox {
+    background-color: #D40000;
+    border-color: #D40000;
+}
+
+.checkbox-list-other .nom-checkbox-list>.nom-field-content>.nom-list>.nom-list-content>.nom-list-item-wrapper>label:not(.s-selected)>span.checkbox::before,
+.checkbox-list-other .nom-checkbox-list>.nom-field-content>.nom-list>.nom-list-content>.nom-list-item-wrapper>label:not(.s-selected)>span.checkbox::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 2px;
+    height: 11px;
+    margin-top: -5px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    content: '';
+    background: #fff;
+}
+
+.checkbox-list-other .nom-checkbox-list>.nom-field-content>.nom-list>.nom-list-content>.nom-list-item-wrapper>label:not(.s-selected)>span.checkbox::before {
+    transform: rotate(45deg);
+}
+
+.checkbox-list-other .nom-checkbox-list>.nom-field-content>.nom-list>.nom-list-content>.nom-list-item-wrapper>label:not(.s-selected)>span.checkbox::after {
+    transform: rotate(-45deg);
+}
+
+.checkbox-list-other a {
+    text-decoration: none;
+}
+
+.checkbox-list-other a:hover {
+    color: var(--nom-color-primary);
+}
+
+.checkbox-list-other .s-disabled.nom-list>.nom-list-content>.nom-list-item-wrapper>.nom-list-item,
+.checkbox-list-other .s-disabled.nom-list>.nom-list-content .nom-virtual-list-item .nom-list-item,
+.checkbox-list-other .nom-list>.nom-list-content>.nom-list-item-wrapper>.nom-list-item.s-disabled,
+.checkbox-list-other .nom-list>.nom-list-content .nom-virtual-list-item .nom-list-item.s-disabled {
+    opacity: 1;
+}
