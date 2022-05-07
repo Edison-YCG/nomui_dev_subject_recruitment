@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/nomui/nomui.css">
+</head>
+<style>
+    body {
+        background: #F0F2F5;
+    }
+</style>
+
+<body>
+    <!-- 内容部分-s -->
+    <div id="app"></div>
+    <!-- 内容部分-e -->
+    <!-- nomui js -->
+    <script src="/nomui/nomui.js"></script>
+
+    <!-- use nomui -->
+    <script>
+        new nomui.Component({
+            reference: document.getElementById('app'),
+            children: [{
+                    attrs: {
+                        style: {
+                            padding: '12px 5px',
+                            'position': 'relative',
+                            'background': '#fff',
+                            'margin-bottom': '16px',
+                        },
+                    },
+                    component: 'Flex',
+                    cols: [{
+                            attrs: {
+                                style: {
+                                    'position': 'absolute',
+                                },
+                            },
+                            component: 'Button',
+                            text: '返回',
+                            type: 'text',
+                            icon: 'prev',
+                        },
+                        {
+                            attrs: {
+                                style: {
+                                    'font-size': '16px',
+                                    'font-weight': 'bold',
+                                    'padding': '0.375rem 0.75rem',
+                                    'text-align': 'center',
+                                },
+                            },
+                            grow: true,
+                            children: '沟通/更新进度',
+                        }
+
+                    ],
+                },
+                {
+                    attrs: {
+                        style: {
+                            'background': '#fff',
+                        },
+                    },
+                    component: 'Layout',
+                    body: {
+                        attrs: {
+                            style: {
+                                'height': 'calc(100vh - 57px)',
+                                'padding': '40px 36px',
+                            },
+                        },
+                        children: '我是身体',
+                    },
+                    asider: {
+                        attrs: {
+                            style: {
+                                'width': '50%',
+                                'height': 'calc(100vh - 57px)',
+                                'padding': '40px 36px',
+                            },
+                        },
+                        children: [{
+                                children: '更新进度',
+                                attrs: {
+                                    style: {
+
+                                        'color': 'var(--nom-color-primary)',
+                                        'font-size': '18px',
+                                        'text-align': 'center',
+                                        'font-weight': 'bold',
+                                        'margin-bottom': '56px',
+                                    },
+                                },
+
+                            },
+                            {
+                                component: 'Steps',
+                                attrs: {
+                                    style: {
+                                        'padding-bottom': '40px',
+                                        'border-bottom': '1px dashed #eee',
+                                    },
+                                },
+                                current: 1,
+                                options: [{
+                                        title: {
+                                            attrs: {
+                                                style: {
+                                                    'margin-bottom': '20px',
+                                                },
+                                            },
+                                            children: '初筛',
+                                        },
+                                        description: {
+                                            children: {
+                                                component: 'Flex',
+                                                rows: [{
+                                                        children: {
+                                                            component: 'Button',
+                                                            attrs: {
+                                                                style: {
+                                                                    'margin-bottom': '16px',
+                                                                },
+                                                            },
+                                                            text: '成 功',
+                                                            type: 'primary',
+                                                        },
+                                                    },
+                                                    {
+                                                        children: [{
+                                                                component: 'Button',
+                                                                attrs: {
+                                                                    style: {
+
+                                                                        'margin-right': '5px',
+                                                                    },
+                                                                },
+                                                                text: '失 败',
+
+                                                            },
+                                                            {
+                                                                component: 'Icon',
+                                                                hidden: true,
+                                                                type: 'info-circle',
+                                                                attrs: {
+                                                                    style: {
+                                                                        'font-size': '16px',
+                                                                        'color': 'var(--nom-color-primary)',
+                                                                        'vertical-align': 'middle',
+                                                                    },
+                                                                },
+                                                            }
+                                                        ],
+                                                    },
+                                                ],
+                                            },
+                                        },
+                                    },
+                                    {
+                                        title: {
+                                            attrs: {
+                                                style: {
+                                                    'margin-bottom': '20px',
+                                                },
+                                            },
+                                            children: '签知情',
+                                        },
+                                        description: {
+                                            children: {
+                                                component: 'Flex',
+                                                rows: [{
+                                                        children: {
+                                                            component: 'Button',
+                                                            attrs: {
+                                                                style: {
+                                                                    'margin-bottom': '16px',
+                                                                },
+                                                            },
+                                                            text: '成 功',
+                                                            type: 'primary',
+                                                        },
+                                                    },
+                                                    {
+                                                        children: [{
+                                                                component: 'Button',
+                                                                attrs: {
+                                                                    style: {
+
+                                                                        'margin-right': '5px',
+                                                                    },
+                                                                },
+                                                                text: '失 败',
+
+                                                            },
+                                                            {
+                                                                component: 'Icon',
+                                                                hidden: true,
+                                                                type: 'info-circle',
+                                                                attrs: {
+                                                                    style: {
+                                                                        'font-size': '16px',
+                                                                        'color': 'var(--nom-color-primary)',
+                                                                        'vertical-align': 'middle',
+                                                                    },
+                                                                },
+                                                            }
+                                                        ],
+                                                    },
+                                                ],
+                                            },
+                                        },
+                                    },
+                                    {
+                                        title: {
+                                            attrs: {
+                                                style: {
+                                                    'margin-bottom': '20px',
+                                                },
+                                            },
+                                            children: '院内筛选',
+                                        },
+                                        description: {
+                                            children: {
+                                                component: 'Flex',
+                                                rows: [{
+                                                        children: {
+                                                            component: 'Button',
+                                                            attrs: {
+                                                                style: {
+                                                                    'margin-bottom': '16px',
+                                                                },
+                                                            },
+                                                            text: '成 功',
+                                                        },
+                                                    },
+                                                    {
+                                                        children: [{
+                                                                component: 'Button',
+                                                                attrs: {
+                                                                    style: {
+
+                                                                        'margin-right': '5px',
+                                                                    },
+                                                                },
+                                                                text: '失 败',
+
+                                                            },
+                                                            {
+                                                                component: 'Icon',
+                                                                hidden: true,
+                                                                type: 'info-circle',
+                                                                attrs: {
+                                                                    style: {
+                                                                        'font-size': '16px',
+                                                                        'color': 'var(--nom-color-primary)',
+                                                                        'vertical-align': 'middle',
+                                                                    },
+                                                                },
+                                                            }
+                                                        ],
+                                                    },
+                                                ],
+                                            },
+                                        },
+                                    },
+                                    {
+                                        title: {
+                                            attrs: {
+                                                style: {
+                                                    'margin-bottom': '20px',
+                                                },
+                                            },
+                                            children: '入组',
+                                        },
+                                        description: {
+                                            children: {
+                                                component: 'Flex',
+                                                rows: [{
+                                                        children: {
+                                                            component: 'Button',
+                                                            attrs: {
+                                                                style: {
+                                                                    'margin-bottom': '16px',
+                                                                },
+                                                            },
+                                                            text: '成 功',
+
+                                                        },
+                                                    },
+                                                    {
+                                                        children: [{
+                                                                component: 'Button',
+                                                                attrs: {
+                                                                    style: {
+
+                                                                        'margin-right': '5px',
+                                                                    },
+                                                                },
+                                                                text: '失 败',
+                                                                type: 'primary',
+
+                                                            },
+                                                            {
+                                                                component: 'Icon',
+                                                                type: 'info-circle',
+                                                                attrs: {
+                                                                    style: {
+                                                                        'font-size': '16px',
+                                                                        'color': 'var(--nom-color-primary)',
+                                                                        'vertical-align': 'middle',
+                                                                    },
+                                                                },
+                                                            }
+                                                        ],
+                                                    },
+                                                ],
+                                            },
+                                        },
+                                    },
+                                ],
+                            },
+
+                        ]
+                    },
+
+                },
+
+            ],
+        })
+    </script>
+</body>
+
+</html>
